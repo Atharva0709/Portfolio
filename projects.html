@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects - Atharva K.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#470064",
+                      "on-secondary": "#00363a",
+                      "on-surface-variant": "#e5bcc5",
+                      "on-primary-fixed": "#3f001a",
+                      "outline": "#ac878f",
+                      "on-surface": "#fbdae1",
+                      "primary-container": "#ff4a8d",
+                      "on-tertiary": "#520072",
+                      "surface-tint": "#ffb1c4",
+                      "inverse-surface": "#fbdae1",
+                      "inverse-primary": "#ba005b",
+                      "on-tertiary-fixed-variant": "#74009f",
+                      "tertiary-fixed-dim": "#ebb2ff",
+                      "outline-variant": "#5c3f46",
+                      "primary-fixed": "#ffd9e1",
+                      "on-primary-fixed-variant": "#8f0044",
+                      "surface": "#1f0e13",
+                      "secondary-container": "#00f1fe",
+                      "on-tertiary-fixed": "#320047",
+                      "secondary-fixed": "#74f5ff",
+                      "on-error": "#690005",
+                      "primary-fixed-dim": "#ffb1c4",
+                      "surface-bright": "#493338",
+                      "surface-variant": "#442f34",
+                      "error": "#ffb4ab",
+                      "background": "#1f0e13",
+                      "secondary": "#ddfcff",
+                      "on-primary-container": "#590028",
+                      "on-background": "#fbdae1",
+                      "surface-container-low": "#28161b",
+                      "inverse-on-surface": "#3f2b30",
+                      "tertiary": "#ebb2ff",
+                      "surface-container": "#2d1a1f",
+                      "secondary-fixed-dim": "#00dbe7",
+                      "on-secondary-fixed": "#002022",
+                      "primary": "#ffb1c4",
+                      "on-secondary-container": "#006a70",
+                      "surface-container-lowest": "#19090e",
+                      "on-primary": "#65002e",
+                      "surface-container-highest": "#442f34",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "tertiary-fixed": "#f8d8ff",
+                      "surface-dim": "#1f0e13",
+                      "tertiary-container": "#cd5dff",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#382529"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "16px",
+                      "unit": "8px",
+                      "margin": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "display-xl": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-mono": ["Space Mono"]
+              },
+              "fontSize": {
+                      "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "display-xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-mono": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Neo-Brutalism / Cyberpunk Aesthetics */
+        body {
+            background-color: #0a0a0a;
+            background-image: radial-gradient(circle at 50% 50%, rgba(31, 14, 19, 0.5) 0%, #0a0a0a 100%);
+            color: #fbdae1; /* on-surface */
+        }
+        
+        .bento-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 0.75rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .bento-card:hover {
+            border-color: #ffb1c4; /* primary */
+            box-shadow: 0 0 15px rgba(255, 177, 196, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .liquid-glass {
+            background: rgba(31, 14, 19, 0.4); /* surface tint with opacity */
+            backdrop-filter: blur(20px) saturate(150%);
+            -webkit-backdrop-filter: blur(20px) saturate(150%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .liquid-glass::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .neon-glow-primary { box-shadow: 0 0 10px rgba(255, 177, 196, 0.4); }
+        .neon-glow-secondary { box-shadow: 0 0 10px rgba(0, 241, 254, 0.4); }
+        .neon-glow-tertiary { box-shadow: 0 0 10px rgba(235, 178, 255, 0.4); }
+
+        .chip {
+            background-color: rgba(255, 177, 196, 0.1);
+            border: 1px solid rgba(255, 177, 196, 0.3);
+            color: #ffb1c4;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+
+        /* TopAppBar Styles from JSON */
+        .top-app-bar {
+            background-color: rgba(31, 14, 19, 0.8);
+            backdrop-filter: blur(24px) saturate(150%);
+            -webkit-backdrop-filter: blur(24px) saturate(150%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 241, 254, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopAppBar Shared Component -->
+<header class="top-app-bar fixed top-0 w-full z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin h-20">
+<div class="font-headline-md text-headline-md font-black tracking-tighter text-secondary">Atharva K.</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300" href="projects.html">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="contact.html">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary font-bold px-6 py-2 rounded-DEFAULT hover:shadow-[0_0_15px_rgba(255,177,196,0.6)] transition-all active:scale-95 duration-200">
+                Connect
+            </button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-24 px-margin max-w-container-max mx-auto w-full">
+<div class="mb-16">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-4">PROJECTS_</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                A curated archive of technical solutions, architectural explorations, and high-performance applications built for edge environments.
+            </p>
+</div>
+<!-- Structured Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Project 1: CampusVault (Spans 8 cols) -->
+<a href="https://github.com/Atharva0709/CampusVault" target="_blank" rel="noopener noreferrer" class="bento-card liquid-glass md:col-span-8 p-8 flex flex-col justify-between group h-full block cursor-pointer">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px] text-primary">school</span>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">CampusVault</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 relative z-10 max-w-2xl">
+                        An advanced career acceleration platform integrating AI to streamline placement preparation. Engineered for high concurrency and seamless user experiences.
+                    </p>
+<div class="flex flex-wrap gap-2 mb-8 relative z-10">
+<span class="chip font-label-mono text-label-mono">React 19</span>
+<span class="chip font-label-mono text-label-mono">Node.js</span>
+<span class="chip font-label-mono text-label-mono">Prisma</span>
+<span class="chip font-label-mono text-label-mono">PostgreSQL</span>
+<span class="chip font-label-mono text-label-mono border-secondary text-secondary bg-secondary/10">OpenAI</span>
+</div>
+</div>
+<div class="mt-auto relative z-10 pt-4 border-t border-white/5">
+<span class="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors font-bold uppercase tracking-wider text-sm">
+                        View Deployment <span class="material-symbols-outlined text-sm">arrow_outward</span>
+</span>
+</div>
+</a>
+<!-- Project 2: GRIND (Spans 4 cols) -->
+<a href="https://github.com/Atharva0709/Grind" target="_blank" rel="noopener noreferrer" class="bento-card p-6 flex flex-col group md:col-span-4 h-full block cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-tertiary transition-colors">GRIND</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors">trending_up</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                    A brutalist productivity and skill tracking application designed to enforce discipline through data visualization.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono border-tertiary text-tertiary bg-tertiary/10">Java</span>
+<span class="chip font-label-mono text-label-mono border-tertiary text-tertiary bg-tertiary/10">Spring Boot</span>
+<span class="chip font-label-mono text-label-mono border-tertiary text-tertiary bg-tertiary/10">MySQL</span>
+</div>
+</a>
+<!-- Project 3: Real-Time Chat (Spans 4 cols) -->
+<article class="bento-card p-6 flex flex-col group border-secondary/30 hover:border-secondary md:col-span-4 h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Real-Time Comm.</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors">forum</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                    Low-latency, bi-directional chat application architecture leveraging WebSockets for instantaneous data delivery.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono">React</span>
+<span class="chip font-label-mono text-label-mono">Node.js</span>
+<span class="chip font-label-mono text-label-mono border-secondary text-secondary bg-secondary/10">Socket.io</span>
+</div>
+</article>
+<!-- Project 5: Elastic Inventory (Spans 8 cols) -->
+<a href="https://github.com/Atharva0709/Inventory-management-with-elasticity" target="_blank" rel="noopener noreferrer" class="bento-card p-6 flex flex-col group md:col-span-8 h-full block cursor-pointer">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-tertiary">inventory_2</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-tertiary transition-colors">Elastic Inventory Mgmt.</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow max-w-3xl">
+                    A scalable supply chain optimization engine designed to dynamically adjust inventory thresholds based on predictive analytics and real-time consumption rates.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono border-outline text-on-surface-variant bg-surface-container">Supply Chain Opt.</span>
+<span class="chip font-label-mono text-label-mono border-outline text-on-surface-variant bg-surface-container">Predictive Algos</span>
+</div>
+</a>
+<!-- Project 4: Gesture-Based Volume (Spans 4 cols) -->
+<article class="bento-card liquid-glass p-6 flex flex-col group md:col-span-4 h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Gesture Control</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">front_hand</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                    Computer vision system utilizing hand tracking algorithms to intuitively map physical gestures to OS-level audio controls.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono">Python</span>
+<span class="chip font-label-mono text-label-mono">OpenCV</span>
+<span class="chip font-label-mono text-label-mono">MediaPipe</span>
+</div>
+</article>
+<!-- Project 6: HydroNeuro (Spans 4 cols) -->
+<article class="bento-card liquid-glass p-6 flex flex-col group border-secondary/20 hover:border-secondary md:col-span-4 h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">HydroNeuro</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors">water_drop</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                    Acoustic AI model trained to identify distinct sound signatures of sub-surface water leaks in urban infrastructure.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono border-secondary text-secondary bg-secondary/10">Acoustic AI</span>
+<span class="chip font-label-mono text-label-mono">Machine Learning</span>
+</div>
+</article>
+<!-- Project 7: GauSetu AI (Spans 4 cols) -->
+<a href="https://github.com/Atharva0709/GauSetu" target="_blank" rel="noopener noreferrer" class="bento-card p-6 flex flex-col group md:col-span-4 h-full block cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">GauSetu AI</h3>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">agriculture</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                    Agritech solution establishing a biometric ledger for livestock, utilizing facial recognition for secure identification and health tracking.
+                </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="chip font-label-mono text-label-mono">Agritech</span>
+<span class="chip font-label-mono text-label-mono">Biometrics</span>
+<span class="chip font-label-mono text-label-mono border-primary text-primary bg-primary/10">CV</span>
+</div>
+</a>
+</div>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest border-t border-white/5 w-full py-unit mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin py-12 gap-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary">Atharva K.</div>
+<div class="font-label-mono text-label-mono uppercase tracking-widest text-tertiary text-center md:text-left">
+                © 2024 Atharva Khandelwal | Engineered for the Edge
+            </div>
+<div class="flex gap-6">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Code</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Design</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Social</a>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle hover effects for bento cards to enhance the glassmorphism
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
