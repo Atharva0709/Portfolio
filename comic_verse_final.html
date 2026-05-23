@@ -214,14 +214,14 @@
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-white crumpled-texture border-b-8 border-black shadow-[10px_10px_0px_0px_#000000]">
 <div class="font-display text-[60px] md:text-[80px] text-black transform leading-none">ATHARVA</div>
 <div class="hidden md:flex gap-8">
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-black underline decoration-4 underline-offset-4 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#">WORK</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#">EXPERIENCE</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#">PROJECTS</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#">CONTACT</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-black underline decoration-4 underline-offset-4 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#home">WORK</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#experience">EXPERIENCE</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#projects">PROJECTS</a>
+<a class="font-label-lg text-label-lg uppercase tracking-widest text-zinc-600 hover:text-black transition-colors hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 transition-transform" href="#contact">CONTACT</a>
 </div>
 </nav>
 <!-- Section 1: Hero -->
-<flow-section class="gsap-panel min-h-screen bg-black flex items-center pt-32 pb-16 px-margin-mobile md:px-margin-desktop relative overflow-hidden z-10 crumpled-texture">
+<flow-section id="home" class="gsap-panel min-h-screen bg-black flex items-center pt-32 pb-16 px-margin-mobile md:px-margin-desktop relative overflow-hidden z-10 crumpled-texture">
 <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent mix-blend-overlay"></div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full z-10 pt-16">
 <div class="flex flex-col items-start gap-6 relative">
@@ -244,7 +244,7 @@
 <div class="torn-paper-bottom"></div>
 </flow-section>
 <!-- Section 2: About / Experience -->
-<flow-section class="gsap-panel bg-white text-black py-40 px-margin-mobile md:px-margin-desktop relative z-20 crumpled-texture -mt-8">
+<flow-section id="experience" class="gsap-panel bg-white text-black py-40 px-margin-mobile md:px-margin-desktop relative z-20 crumpled-texture -mt-8">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
 <div class="flex-1 relative">
 <h2 class="font-display text-headline-lg-mobile md:text-[100px] leading-[0.9] uppercase mb-12 inline-block bg-black text-white px-6 py-4 transform -rotate-2 brutal-shadow">THE INSIDE SCOOP</h2>
@@ -274,7 +274,7 @@
 <div class="torn-paper-bottom"></div>
 </flow-section>
 <!-- Section 3: Skills -->
-<flow-section class="gsap-panel bg-primary-container py-64 px-margin-mobile md:px-margin-desktop relative z-30 crumpled-texture -mt-12">
+<flow-section id="skills" class="gsap-panel bg-primary-container py-64 px-margin-mobile md:px-margin-desktop relative z-30 crumpled-texture -mt-12">
 <div class="max-w-7xl mx-auto relative z-10">
 <h2 class="font-display text-headline-lg-mobile md:text-[160px] text-black uppercase text-center mb-24 filter drop-shadow-[8px_8px_0_#fff]">THE ARSENAL</h2>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12">
@@ -296,11 +296,11 @@
 <div class="torn-paper-bottom"></div>
 </flow-section>
 <!-- Section 4: Projects -->
-<flow-section class="gsap-panel bg-black py-40 px-margin-mobile md:px-margin-desktop relative min-h-screen z-40 crumpled-texture -mt-16">
+<flow-section id="projects" class="bg-black py-40 px-margin-mobile md:px-margin-desktop relative min-h-screen z-40 crumpled-texture -mt-16">
 <h2 class="font-display text-[80px] md:text-[140px] text-white uppercase mb-16 text-center border-b-8 border-white pb-4 inline-block mx-auto heavy-ink-text w-full">THE ARCHIVES</h2>
 <div class="max-w-5xl mx-auto flex flex-col items-center gap-24 mt-20 perspective-1000">
 <!-- Zine 1 -->
-<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-2 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer crumpled-texture">
+<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-2 hover:rotate-0 hover:z-50 transition-all duration-300 relative group crumpled-texture flex flex-col">
 <div class="absolute -top-6 -left-6 bg-primary-container text-black font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform -rotate-6 z-10 crumpled-texture">VOL. 01</div>
 <div class="w-full h-[400px] bg-zinc-800 border-4 border-black mb-8 relative overflow-hidden"><img alt="CampusVault" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmf6y3KTMfyVB-A5snqqgYs2nGZTI0QsgnIIweVvugsl9QPMaJpKWSw7iKg_kcYxSggVCtGQpRRPB0YY7Kj7ptl7weKQM2zh760ipI7WLSrchmSCoGPJV6vFC7eB3TxmhFpb6hI1NLXbmjvZLsQcH_UZ8DBRUi3FJSf9XgFewl1PHjRxnhrVJs_nHRAuhEfT4QWXrZQNgBAejbHreMh7H6NobPVowvl3_ozuHZIJE2Qtb2xI9SLMhy0kW8NLk3N0c3wjvbA3VPTIM-"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">CampusVault</h3>
@@ -314,10 +314,13 @@
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">PostgreSQL</span>
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">OpenAI</span>
 </div>
-<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl">A secure, intelligent repository for campus resources with AI-driven search capabilities.</p>
+<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl flex-grow">A secure, intelligent repository for campus resources with AI-driven search capabilities.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709/CampusVault" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary-container text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 <!-- Zine 2 -->
-<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer z-10 crumpled-texture">
+<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group z-10 crumpled-texture flex flex-col">
 <div class="absolute -top-6 right-6 bg-white text-black font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform rotate-6 z-10 crumpled-texture">VOL. 02</div>
 <div class="w-full h-[400px] bg-zinc-200 border-4 border-black mb-8 relative overflow-hidden"><img alt="GRIND" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJBoh2BH1n7zc5wTCZ6EGZBEVDIoRv9T1DsViUnZ6iTc_Nwq-pIxk1DEAH24CNEtYUJnN-9V0Fo1Tf4ASNvJCA8qFFtsLPgX3thX2a68MCpgqRp3xZO21kaoMreXqegwbOY4eouNwIbNBcXlsecREG79Kc7nKNvivceq2SItd8tqcvUsPQNxetkdl8m3HK80f0cGfZSkuvNrM9wOjG1LWLLns1MF6uWi68kPlFx_sA50PLNCxg7ziSaYptLPvgmmTYuSC6IRLTVZC7"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">GRIND</h3>
@@ -328,10 +331,13 @@
 <span class="bg-white text-black px-3 py-2 font-caption text-[14px] uppercase font-black">JS</span>
 <span class="bg-white text-black px-3 py-2 font-caption text-[14px] uppercase font-black">Tailwind</span>
 </div>
-<p class="font-body-md text-xl text-black font-bold leading-tight max-w-2xl">High-performance backend architecture designed for scale and relentless data processing.</p>
+<p class="font-body-md text-xl text-black font-bold leading-tight max-w-2xl flex-grow">High-performance backend architecture designed for scale and relentless data processing.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709/Grind" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 <!-- Zine 3 -->
-<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer z-10 crumpled-texture">
+<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group z-10 crumpled-texture flex flex-col">
 <div class="absolute top-6 -left-8 bg-black text-white font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform -rotate-6 z-10">VOL. 03</div>
 <div class="w-full h-[400px] bg-zinc-900 border-4 border-black mb-8 relative overflow-hidden"><img alt="Real-Time Chat" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzW-Ao9oameE_NwGh2S4Rdgh9qjjhzK8vFizMSN1Zal_xzd0k3WVlABgNsiyTpeJFPAAbXdT9gz9WE7NTrN8_HyXRvW2cN5JPTc85mSRZkpEvK_729xocV-X3rrF9u2dvjYmnvYHGccfzi9WAEnEVZzaGj-WyIIvee7R8w5Yz1CuvLfies0xcFZZsQRWb3OJY3IZAAXalhhFH1YEmR9vgJJrEYVu2j6RWJHJJjj_6IuDIVnRXPAQB9GWN3LV45pEmRbVrNdhGeK2ty"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">Real-Time Chat</h3>
@@ -340,10 +346,13 @@
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Node.js</span>
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Socket.io</span>
 </div>
-<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl">Instantaneous communication platform built on bidirectional event-based communication.</p>
+<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl flex-grow">Instantaneous communication platform built on bidirectional event-based communication.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary-container text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 <!-- Zine 4 -->
-<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-2 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer z-10 crumpled-texture">
+<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-2 hover:rotate-0 hover:z-50 transition-all duration-300 relative group z-10 crumpled-texture flex flex-col">
 <div class="absolute -top-6 right-6 bg-white text-black font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform -rotate-6 z-10 crumpled-texture">VOL. 04</div>
 <div class="w-full h-[400px] bg-zinc-200 border-4 border-black mb-8 relative overflow-hidden"><img alt="Gesture Control" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3wHii2MWA5w4GO7oiW9YdlfyNhBWIXbSdtlF2QgHgMHUu_06Iv0XAWw4E4fxQkgFCZKdeSdxdJrsLtrPmdp9gD7eG5faY8LU1cs5umJBKNQ0h0YYqqaX1Ss3NvObwMkVcH1i1rA8fjbZsGSnCKIA3RdolOLkR_BkQBoj_P_q0gHAzmSJXNNa5aAz0UDEZA0XuCmLF7Mr_q4LjaoBMW7Hg-JeoKHfeIGj7wMsLgucpKiJo7v8pMmtl4bZPoDdrYrDkq_nmFN1UaO9_"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">Gesture Control</h3>
@@ -353,10 +362,13 @@
 <span class="bg-white text-black px-3 py-2 font-caption text-[14px] uppercase font-black">MediaPipe</span>
 <span class="bg-white text-black px-3 py-2 font-caption text-[14px] uppercase font-black">pycaw</span>
 </div>
-<p class="font-body-md text-xl text-black font-bold leading-tight max-w-2xl">Computer vision interface allowing volume manipulation through physical hand gestures.</p>
+<p class="font-body-md text-xl text-black font-bold leading-tight max-w-2xl flex-grow">Computer vision interface allowing volume manipulation through physical hand gestures.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 <!-- Zine 5 -->
-<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer z-10 crumpled-texture">
+<div class="w-full bg-white border-8 border-black p-8 brutal-shadow transform -rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group z-10 crumpled-texture flex flex-col">
 <div class="absolute top-6 -left-8 bg-black text-white font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform rotate-6 z-10">VOL. 05</div>
 <div class="w-full h-[400px] bg-zinc-900 border-4 border-black mb-8 relative overflow-hidden"><img alt="Elastic Inventory" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSJPmvt4HIRLkIlE-c0umyImiqQkK37VqJOv2-TKv65XvRynEBhZaSfAHqN8g9XzkT04qD1V29P_5sxCxGsyqpX4rbz8fEmrbZyxYkkipyNaQUmc-T45fiJjw1yrMN-kvuKW6WVajCnjoXC1WDX7Qor7n_y1BSlaoCA1S3vVzgH32mq52or3r5Kz3njkiNosOFjKiJ3Scn7C-ZqdSPlQKlPqVbhm-qAS4D_T1n6lppnIVDfQRl2DoX_if4wKmHyEHk8J4g5WdY43vS"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">Elastic Inventory</h3>
@@ -365,10 +377,13 @@
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Client Frontend</span>
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Predictive Algos</span>
 </div>
-<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl">Decoupled architecture utilizing predictive algorithms for dynamic resource allocation.</p>
+<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl flex-grow">Decoupled architecture utilizing predictive algorithms for dynamic resource allocation.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709/Inventory-management-with-elasticity" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary-container text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 <!-- Zine 6 -->
-<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group cursor-pointer z-10 crumpled-texture">
+<div class="w-full bg-primary-container border-8 border-black p-8 brutal-shadow transform rotate-1 hover:rotate-0 hover:z-50 transition-all duration-300 relative group z-10 crumpled-texture flex flex-col">
 <div class="absolute top-6 -left-8 bg-black text-white font-display text-[32px] border-4 border-black px-6 py-2 brutal-shadow transform -rotate-6 z-10">VOL. 06</div>
 <div class="w-full h-[400px] bg-zinc-900 border-4 border-black mb-8 relative overflow-hidden"><img alt="GauSetu" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUiIwjoZBFcMOWiIrx-SE-uV9qPXyIxToNNv71pqnjvTaby5DsuX_RYT0mlLsiwtS_NU_fLGeftBb7Gn1VbOxlxHTIa2pCd08SBRCtGf0m8NIuqQQvO2OTmUfTCpJ_BowUXTgg6tV1086qwh7hivFyl9mhk4bRK0hrvDfJWNCA3YVtaI7RUIYMX94Cuw0GQLAepaQ5WASrWAmzN1LudfArsvE60HFoG4Bg1gRRWopCJfui8XZBY4IMgYL7xn_-3JrcixS8v-K4UJty"/></div>
 <h3 class="font-display text-[64px] text-black uppercase leading-none mb-4">GauSetu</h3>
@@ -377,13 +392,16 @@
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Computer Vision</span>
 <span class="bg-black text-white px-3 py-2 font-caption text-[14px] uppercase font-black">Cattle Biometrics</span>
 </div>
-<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl">Agricultural technology leveraging advanced biometrics for decentralized livestock tracking.</p>
+<p class="font-body-md text-xl text-zinc-800 font-bold leading-tight max-w-2xl flex-grow">Agricultural technology leveraging advanced biometrics for decentralized livestock tracking.</p>
+<div class="mt-8 pt-6 border-t-4 border-black">
+    <a href="https://github.com/Atharva0709/GauSetu" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black font-display text-[32px] px-6 py-2 border-4 border-black brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">More Info &rarr;</a>
+</div>
 </div>
 </div>
 <div class="torn-paper-bottom"></div>
 </flow-section>
 <!-- Section 5: Contact -->
-<flow-section class="gsap-panel bg-white py-40 px-margin-mobile md:px-margin-desktop relative z-50 crumpled-texture -mt-20">
+<flow-section id="contact" class="bg-white py-40 px-margin-mobile md:px-margin-desktop relative z-50 crumpled-texture -mt-20">
 <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-20 items-start">
 <div class="flex-1 relative">
 <h2 class="font-display text-[120px] md:text-[160px] leading-[0.75] text-black uppercase mb-12 heavy-ink-text z-10 relative">LET'S<br/><span class="text-primary-container block mt-4">COLLABORATE</span></h2>
